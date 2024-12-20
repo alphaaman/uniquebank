@@ -1,0 +1,77 @@
+server:
+  port: 8999
+  
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin 
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+      routes:
+      - id : LOGIN-FUNCTIONALITY
+        uri: lb://LOGIN-FUNCTIONALITY
+        predicates:
+        - Path=/admin/**,/manager/**,/customer/**,/employee/**,/users/**
+        
+
+      - id : TRANSACTION-SERVICE
+        uri: lb://TRANSACTION-SERVICE
+        predicates:
+        - Path=/transaction/**
+        filters:
+        - AuthenticationFilter
+        
+      - id : ACCOUNT-SERVICE
+        uri: lb://ACCOUNT-SERVICE
+        predicates:
+        - Path=/account/**
+        filters:
+        - AuthenticationFilter
+      
+      - id : LOCKER-SERVICE
+        uri: lb://LOCKER-SERVICE
+        predicates:
+        - Path=/lockers/**
+        filters:
+        - AuthenticationFilter
+        
+      - id : MAIL-SERVICE
+        uri: lb://MAIL-SERVICE
+        predicates:
+        - Path=/sendemail/**
+       
+       
+        
+        
+      - id : GIFT-SERVICE
+        uri: lb://GIFT-SERVICE
+        predicates:
+        - Path=/gift/**
+        filters:
+        - AuthenticationFilter
+        
+      - id : CREDIT-SERVICE
+        uri: lb://CREDIT-SERVICE
+        predicates:
+        - Path=/api/credit-cards/**
+        filters:
+        - AuthenticationFilter
+        
+      - id : LOAN-SERVICE
+        uri: lb://LOAN-SERVICE
+        predicates:
+        - Path=/api/v1/loan/**
+        filters:
+        - AuthenticationFilter
