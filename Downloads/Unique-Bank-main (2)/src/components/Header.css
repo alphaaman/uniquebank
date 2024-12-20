@@ -1,0 +1,16 @@
+.logo {
+  width: 200px;
+  height: 60px;
+  margin-right: 4px;
+
+}
+
+.navbar-item {
+  margin: 10px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+  .css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    background-color: var(--axisbase) !important;
+  }

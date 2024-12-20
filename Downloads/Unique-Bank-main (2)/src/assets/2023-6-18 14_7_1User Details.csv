@@ -1,0 +1,5 @@
+id,username,email,phone,name,address,dateOfBirth,phoneNumber,panNo,roles,accountCreated
+1,admin,newadmin@admin.edu,7506102179,admin,123 Main St,1990-01-01T00:00:00.000+00:00,9876543210,ABCDE1234F,[object Object],[object Object],[object Object],[object Object],false
+4,rockyemp,rockyemp@admin.edu,1234567789,rocky bhai ka employee,123 Main St,1990-01-01T00:00:00.000+00:00,9876543210,ABCDE1234F,[object Object],[object Object],false
+7,newadmin,gaman9473@gmail.com,null,Aman gupta,C1 104 Ashtvinayak residency Purna,2023-06-06T00:00:00.000+00:00,7249241262,ASGDKEKDL55,[object Object],false
+8,makeadmin,gaman9473@admin.edu,null,Aman gupta,C1 104 Ashtvinayak residency Purna,2023-06-05T00:00:00.000+00:00,7249241262,AMA<SKMDSS,[object Object],[object Object],[object Object],[object Object],false

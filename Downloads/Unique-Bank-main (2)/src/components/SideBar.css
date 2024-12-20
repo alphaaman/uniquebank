@@ -1,0 +1,14 @@
+.sidebar-item a {
+    color: #fff; /* Set the desired text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .sidebar-item a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  .active-link {
+    color: #fff; /* Set the active link text color */
+    font-weight: bold; /* Add any additional styling for active links */
+  }
+  

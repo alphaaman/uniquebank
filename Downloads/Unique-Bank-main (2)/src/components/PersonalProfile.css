@@ -1,0 +1,122 @@
+.gradient-custom {
+  background: #ec7c9a;
+  background: -webkit-linear-gradient(to right bottom, rgb(155, 29, 105), rgb(117, 21, 72));
+  background: linear-gradient(to right bottom, rgb(219, 66, 114), rgb(157, 41, 103));
+}
+
+.personal-profile-container {
+  background-color: #f4f5f7;
+  
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.personal-profile-card {
+  display:flex;
+  justify-content: center;
+  max-width: 90vw;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-profile-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 15vw;
+ 
+  background-color: #d23d9e;
+  color: white;
+  border-radius: 1rem;
+ 
+}
+
+.personal-profile-card-body {
+  padding: 1rem;
+  min-width: 20vw;
+  max-width: 40vw;
+  background:#FFF0FA;
+  border-radius: 1rem;
+}
+
+.personal-profile-avatar {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background-color: #FF9300;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.personal-profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.personal-profile-designation {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.personal-profile-divider {
+  margin-top: 0.5rem;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.personal-profile-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.personal-profile-info-label {
+  font-weight: bold;
+}
+
+.personal-profile-social-icons a {
+  color: #333;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.personal-profile-social-icons a:hover {
+  color: #d23d9e;
+}
+
+.credit-card {
+  width: 250px;
+  height: 140px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: silver;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(302deg, #222222, #9a9a9a, #222222);
+}
+
+
+
+.card-number {
+  font-size: 20px;
+}
+
+.card-holder {
+  font-size: 18px;
+}
+
+.card-expiry {
+  font-size: 16px;
+}
